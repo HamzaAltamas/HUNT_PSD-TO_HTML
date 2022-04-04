@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel Vertical jQuery Plugin Example</title>
+    
+	<!-- Carousel Vertical CSS -->
+	<link rel="stylesheet" href="css/carousel-vertical.css">
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+  		<style type="text/css">
+			#demo {
+				height:500px;
+			}
+			.cv-carousel .item {
+				padding: 1rem;
+			}
+			.cv-item {
+				background: #ff7605;
+				
+			}
+			.cv-item h4{
+			   color: #fff;
+			   font-size: 42pt;
+			 }
+		</style>
+  </head>
+  <body>
+ <header class="intro">
+ <h1>Carousel Vertical jQuery Plugin Example </h1>
+ <p> jQuery plugin for creating carousel sliders. Inspired to Owl Carousel 2, but it works vertically.</p>
+ <p> Written in HTML, CSS, JavaScript (jQuery)... </p>
+ <div class="action">
+ <a href="https://www.codehim.com/carousel/jquery-div-vertical-content-slider-carousel-vertical/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+ <a href="https://github.com/iannacone/carousel-vertical" title="View, Fork or Star on GitHub" class="btn github">View on GitHub</a>
+ </div>
+ 
+ </header>
+  
+ <main>
+  <article>
+  <p>The following is the example of "Carousel Vertical". </p>
+		<div id="demo">
+			<div class="cv-carousel">
+				<div class="item"><h4>1</h4></div>
+				<div class="item"><h4>2</h4></div>
+				<div class="item"><h4>3</h4></div>
+				<div class="item"><h4>4</h4></div>
+				<div class="item"><h4>5</h4></div>
+				<div class="item"><h4>6</h4></div>
+				<div class="item"><h4>7</h4></div>
+				<div class="item"><h4>8</h4></div>
+				<div class="item"><h4>9</h4></div>
+				<div class="item"><h4>10</h4></div>
+				<div class="item"><h4>11</h4></div>
+				<div class="item"><h4>12</h4></div>
+			</div>
+		</div>
+  </article>
+ </main>
+ 
+  <footer class="credit">Author: Simon Iannacone - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+  
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Carousel Vertical JS -->
+<script src="js/carousel-vertical.js"></script>
+		<script type="text/javascript">
+			(function($){
+				$(document).ready(function(){
+					// init
+					$('.cv-carousel').carouselVertical();
+					// for moving programmatically the carousel
+					// you can do that
+					$('.cv-carousel').trigger('goTo', [5]);
+					// or that
+					$('.cv-carousel').carouselVertical().trigger('goTo', [5]);
+				});
+			})(jQuery); 
+		</script>
+		
+  </body>
+</html>
